@@ -14,3 +14,6 @@ Python files:
     - The MNIST dataset is also automatically downloaded to a chosen directory.
     - Saves sample images from each epoch to specified directory
     - Saves models at each epoch to specified directory
+    
+Epoch progression on MNIST Dataset showing numbers from 0-9 via conditioning:
+![](data/saved_images/epoch_progression.gif)
