@@ -16,4 +16,7 @@ Python files:
     - Saves models at each epoch to specified directory
     
 Epoch progression on MNIST Dataset showing numbers from 0-9 via conditioning:
+
 ![](data/saved_images/epoch_progression.gif)
+
+The generation on images is not that greatest of quality with simply feed forward networks with regular GAN loss as mode collapse and vanishing gradients can be quite a problem. For higher quality MNIST images as well as Cifar and CelebA, take a look at WGAN or DCGAN repositories.
