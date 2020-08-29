@@ -76,7 +76,7 @@ class Trainer():
                 d_loss.backward()
                 self.optimizer_d.step()
 
-                dis_loss = d_loss.item()/b_size
+                dis_loss += d_loss.item()/b_size
 
                 #train Generator
                 self.optimizer_g.zero_grad()
@@ -89,7 +89,7 @@ class Trainer():
                 g_loss.backward()
                 self.optimizer_g.step()
 
-                gen_loss = g_loss.item()/b_size
+                gen_loss += g_loss.item()/b_size
 
             cur_time = time.time() - cur_time
 
